@@ -15,13 +15,13 @@ configViewEngine(app);
 //khai báo route
 app.use('/', webRoute);
 
-connection.query(
-    'Select * from Users ;',
-    function (err, result, fields) {
-        console.log(">>> results= ", result);
-        console.log(">>> fields= ", fields);
-    }
-)
+// connection.query(
+//     'Select * from Users ;',
+//     function (err, result, fields) {
+//         console.log(">>> results= ", result);
+//         console.log(">>> fields= ", fields);
+//     }
+// )
 
 app.listen(port, hostname, () => {
     console.log(`Example app listening on port ${port}`)
